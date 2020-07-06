@@ -456,14 +456,16 @@ int main(int argc, char **argv) {
                    i, 
                    devices[i].type->has_sensor == 2 ? "internal" : "temperature",
                    formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0],
-                //    formato == 2 ? "F" : "C");
+                //    formato == 2 ? "F" : "C"
+                );
 
             if (devices[i].type->has_sensor == 2) {
                 printf("%s\t%d\texternal\t%.2f %s\n", 
                        strdate, 
                        i, 
                        formato == 2 ? 9.0 / 5.0 * tempd[1] + 32.0 : tempd[1],
-                    //    formato == 2 ? "F" : "C");
+                    //    formato == 2 ? "F" : "C"
+                    );
             }
 
             // print humidity
