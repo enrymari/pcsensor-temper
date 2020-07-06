@@ -455,7 +455,7 @@ int main(int argc, char **argv) {
                    strdate, 
                    i, 
                    devices[i].type->has_sensor == 2 ? "internal" : "temperature",
-                   formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0],
+                   formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0]
                 //    formato == 2 ? "F" : "C"
                 );
 
@@ -463,7 +463,7 @@ int main(int argc, char **argv) {
                 printf("%s\t%d\texternal\t%.2f %s\n", 
                        strdate, 
                        i, 
-                       formato == 2 ? 9.0 / 5.0 * tempd[1] + 32.0 : tempd[1],
+                       formato == 2 ? 9.0 / 5.0 * tempd[1] + 32.0 : tempd[1]
                     //    formato == 2 ? "F" : "C"
                     );
             }
