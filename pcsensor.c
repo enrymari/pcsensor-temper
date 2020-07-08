@@ -460,7 +460,7 @@ int main(int argc, char **argv) {
                 );
             printf("test");
 
-            if (devices[i].type->has_sensor == 2) {
+/*             if (devices[i].type->has_sensor == 2) {
                 printf("%s\t%d\texternal\t%.2f %s\n", 
                        strdate, 
                        i, 
@@ -468,7 +468,7 @@ int main(int argc, char **argv) {
                        formato == 2 ? "F" : "C"
                     );
 
-            }
+            } */
 
         }
         if (!bsalir)
