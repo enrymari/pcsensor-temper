@@ -416,34 +416,12 @@ int main(int argc, char **argv) {
     (void) signal(SIGINT, ex_program);
 
     answer = calloc(reqIntLen, sizeof(unsigned char));
-    /* This looks unnecessary
-    for (i = 0; i < numdev; i++) {
-        ini_control_transfer(devices[i].handle);
-
-        control_transfer(devices[i].handle, uTemperature);
-        interrupt_read(devices[i].handle, answer);
-
-        control_transfer(devices[i].handle, uIni1);
-        interrupt_read(devices[i].handle, answer);
-
-        control_transfer(devices[i].handle, uIni2);
-        interrupt_read(devices[i].handle, answer);
-        interrupt_read(devices[i].handle, answer);
-    }
-    */
 
     do {
         for (i = 0; i < numdev; i++) {
             // get localtime
             t = time(NULL);
             local = localtime(&t);
-            // sprintf(strdate, "%04d-%02d-%02dT%02d:%02d:%02d",
-            //         local->tm_year +1900,
-            //         local->tm_mon + 1,
-            //         local->tm_mday,
-            //         local->tm_hour,
-            //         local->tm_min,
-            //         local->tm_sec);
 
             // get temperature
             control_transfer(devices[i].handle, uTemperature);
@@ -451,24 +429,11 @@ int main(int argc, char **argv) {
             devices[i].type->decode_func(answer, tempd, calibration);
 
             // print temperature
-            printf("%.2f", 
-                   //strdate, 
-                   //i, 
+            printf("%.2f",
                    //devices[i].type->has_sensor == 2 ? "internal" : "",
                    formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0]
                    //formato == 2 ? "F" : "C"
-				   
                 );
-
-		/*  if (devices[i].type->has_sensor == 2) {
-                printf("%s\t%d\texternal\t%.2f %s\n", 
-                       strdate, 
-                       i, 
-                       formato == 2 ? 9.0 / 5.0 * tempd[1] + 32.0 : tempd[1],
-                       formato == 2 ? "F" : "C"
-                    );
-
-            } */
 
         }
         if (!bsalir)
