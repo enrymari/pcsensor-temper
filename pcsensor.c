@@ -458,6 +458,7 @@ int main(int argc, char **argv) {
                    formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0],
                    formato == 2 ? "F" : "C"
                 );
+            printf("test");
 
             if (devices[i].type->has_sensor == 2) {
                 printf("%s\t%d\texternal\t%.2f %s\n", 
@@ -466,7 +467,7 @@ int main(int argc, char **argv) {
                        formato == 2 ? 9.0 / 5.0 * tempd[1] + 32.0 : tempd[1],
                        formato == 2 ? "F" : "C"
                     );
-                printf("test");
+
             }
 
         }
