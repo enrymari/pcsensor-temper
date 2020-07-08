@@ -451,16 +451,16 @@ int main(int argc, char **argv) {
             devices[i].type->decode_func(answer, tempd, calibration);
 
             // print temperature
-            printf("%s\t%d\t%s\t%.2f %s\n", 
+            printf("%.2f", 
                    //strdate, 
-                   i, 
+                   //i, 
                    //devices[i].type->has_sensor == 2 ? "internal" : "",
-                   formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0],
-                   formato == 2 ? "F" : "C"
+                   formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0]
+                   //formato == 2 ? "F" : "C"
+				   
                 );
-            printf("test");
 
-/*             if (devices[i].type->has_sensor == 2) {
+		/*  if (devices[i].type->has_sensor == 2) {
                 printf("%s\t%d\texternal\t%.2f %s\n", 
                        strdate, 
                        i, 
