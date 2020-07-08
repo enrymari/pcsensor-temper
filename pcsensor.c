@@ -454,7 +454,7 @@ int main(int argc, char **argv) {
             printf("%s\t%d\t%s\t%.2f %s\n", 
                    strdate, 
                    i, 
-                   devices[i].type->has_sensor == 2 ? "internal" : "",
+                   //devices[i].type->has_sensor == 2 ? "internal" : "",
                    formato == 2 ? 9.0 / 5.0 * tempd[0] + 32.0 : tempd[0],
                    formato == 2 ? "F" : "C"
                 );
