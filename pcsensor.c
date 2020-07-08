@@ -466,6 +466,7 @@ int main(int argc, char **argv) {
                        formato == 2 ? 9.0 / 5.0 * tempd[1] + 32.0 : tempd[1],
                        formato == 2 ? "F" : "C"
                     );
+                printf("test");
             }
 
         }
