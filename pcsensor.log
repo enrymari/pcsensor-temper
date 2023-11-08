@@ -1,0 +1,114 @@
+[timestamp] [threadID] facility level [function call] <message>
+--------------------------------------------------------------------------------
+[ 0.013330] [00000350] libusb: debug [libusb_get_device_list]  
+[ 0.013361] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.013373] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.013384] [00000350] libusb: debug [libusb_open] open 6.3
+[ 0.013428] [00000350] libusb: debug [usbi_add_event_source] add fd 7 events 4
+[ 0.013445] [00000350] libusb: debug [libusb_submit_transfer] transfer 0x55c453b6b0b0
+[ 0.013456] [00000350] libusb: debug [add_to_flying_list] arm timer for timeout in 1000ms (first in line)
+[ 0.013491] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 0.013502] [00000350] libusb: debug [handle_events] event sources modified, reallocating event data
+[ 0.013516] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 0.014756] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 0.014776] [00000350] libusb: debug [reap_for_handle] urb type=2 status=0 transferred=4
+[ 0.014787] [00000350] libusb: debug [handle_control_completion] handling completion status 0
+[ 0.014798] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 0.014810] [00000350] libusb: debug [usbi_handle_transfer_completion] transfer 0x55c453b6b0b0 has callback 0x7f2687ddd9d0
+[ 0.014820] [00000350] libusb: debug [sync_transfer_cb] actual_length=4
+[ 0.014836] [00000350] libusb: debug [libusb_free_transfer] transfer 0x55c453b6b0b0
+[ 0.014849] [00000350] libusb: debug [libusb_submit_transfer] transfer 0x55c453b542e0
+[ 0.014860] [00000350] libusb: debug [add_to_flying_list] arm timer for timeout in 1000ms (first in line)
+[ 0.014885] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 0.014896] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 0.016746] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 0.016761] [00000350] libusb: debug [reap_for_handle] urb type=2 status=0 transferred=18
+[ 0.016772] [00000350] libusb: debug [handle_control_completion] handling completion status 0
+[ 0.016782] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 0.016793] [00000350] libusb: debug [usbi_handle_transfer_completion] transfer 0x55c453b542e0 has callback 0x7f2687ddd9d0
+[ 0.016803] [00000350] libusb: debug [sync_transfer_cb] actual_length=18
+[ 0.016815] [00000350] libusb: debug [libusb_free_transfer] transfer 0x55c453b542e0
+[ 0.016827] [00000350] libusb: debug [libusb_submit_transfer] transfer 0x55c453b57bd0
+[ 0.016837] [00000350] libusb: debug [add_to_flying_list] arm timer for timeout in 1000ms (first in line)
+[ 0.016856] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 0.016867] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 0.017746] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 0.017761] [00000350] libusb: debug [reap_for_handle] urb type=2 status=0 transferred=4
+[ 0.017771] [00000350] libusb: debug [handle_control_completion] handling completion status 0
+[ 0.017781] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 0.017793] [00000350] libusb: debug [usbi_handle_transfer_completion] transfer 0x55c453b57bd0 has callback 0x7f2687ddd9d0
+[ 0.017802] [00000350] libusb: debug [sync_transfer_cb] actual_length=4
+[ 0.017814] [00000350] libusb: debug [libusb_free_transfer] transfer 0x55c453b57bd0
+[ 0.017825] [00000350] libusb: debug [libusb_submit_transfer] transfer 0x55c453b5aa40
+[ 0.017835] [00000350] libusb: debug [add_to_flying_list] arm timer for timeout in 1000ms (first in line)
+[ 0.017858] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 0.017869] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 0.019745] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 0.019779] [00000350] libusb: debug [reap_for_handle] urb type=2 status=0 transferred=22
+[ 0.019790] [00000350] libusb: debug [handle_control_completion] handling completion status 0
+[ 0.019800] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 0.019812] [00000350] libusb: debug [usbi_handle_transfer_completion] transfer 0x55c453b5aa40 has callback 0x7f2687ddd9d0
+[ 0.019822] [00000350] libusb: debug [sync_transfer_cb] actual_length=22
+[ 0.019834] [00000350] libusb: debug [libusb_free_transfer] transfer 0x55c453b5aa40
+lvr_winusb with Bus:006 Addr:003 VendorID:3553 ProductID:a001 Manufacturer:PCsensor Product:TEMPerGold Serial:ÿ found.
+[ 0.019866] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019876] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019884] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019893] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019902] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019911] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019919] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019928] [00000350] libusb: debug [libusb_get_device_descriptor]  
+[ 0.019940] [00000350] libusb: debug [libusb_detach_kernel_driver] interface 0
+Device already detached
+[ 0.019963] [00000350] libusb: debug [libusb_detach_kernel_driver] interface 1
+Device already detached
+[ 0.019983] [00000350] libusb: debug [libusb_reset_device]  
+[ 0.324863] [00000350] libusb: debug [libusb_set_configuration] configuration 1
+[ 0.325072] [00000351] libusb: debug [linux_get_device_address] getting address for device: 6-1 detached: 0
+[ 0.325106] [00000351] libusb: debug [linux_get_device_address] scan 6-1
+[ 0.325189] [00000351] libusb: debug [linux_get_device_address] bus=6 dev=3
+[ 0.325201] [00000351] libusb: debug [udev_hotplug_event] udev hotplug event. action: change.
+[ 0.325211] [00000351] libusb: error [udev_hotplug_event] ignoring udev action change
+[ 0.326732] [00000350] libusb: debug [libusb_claim_interface] interface 0
+[ 0.326787] [00000350] libusb: debug [libusb_claim_interface] interface 1
+[ 0.326910] [00000350] libusb: debug [libusb_submit_transfer] transfer 0x55c453b5db90
+[ 0.326924] [00000350] libusb: debug [add_to_flying_list] arm timer for timeout in 5000ms (first in line)
+[ 0.326949] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 0.326961] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 0.327728] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 0.327744] [00000350] libusb: debug [reap_for_handle] urb type=2 status=0 transferred=8
+[ 0.327755] [00000350] libusb: debug [handle_control_completion] handling completion status 0
+[ 0.327765] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 0.327777] [00000350] libusb: debug [usbi_handle_transfer_completion] transfer 0x55c453b5db90 has callback 0x7f2687ddd9d0
+[ 0.327787] [00000350] libusb: debug [sync_transfer_cb] actual_length=8
+[ 0.327799] [00000350] libusb: debug [libusb_free_transfer] transfer 0x55c453b5db90
+01 80 33 01 00 00 00 00 
+[ 0.327873] [00000350] libusb: debug [libusb_submit_transfer] transfer 0x55c453b5ebc0
+[ 0.327883] [00000350] libusb: debug [add_to_flying_list] arm timer for timeout in 5000ms (first in line)
+[ 0.327896] [00000350] libusb: debug [submit_bulk_transfer] need 1 urbs for new transfer with length 8
+[ 0.327916] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 0.327927] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 0.328399] [00000351] libusb: debug [linux_get_device_address] getting address for device: 6-1 detached: 0
+[ 0.328414] [00000351] libusb: debug [linux_get_device_address] scan 6-1
+[ 0.328492] [00000351] libusb: debug [linux_get_device_address] bus=6 dev=3
+[ 0.328504] [00000351] libusb: debug [udev_hotplug_event] udev hotplug event. action: change.
+[ 0.328531] [00000351] libusb: error [udev_hotplug_event] ignoring udev action change
+[ 5.327903] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 5.327950] [00000350] libusb: debug [libusb_cancel_transfer] transfer 0x55c453b5ebc0
+[ 5.329402] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 5.329420] [00000350] libusb: debug [libusb_handle_events_timeout_completed] doing our own event handling
+[ 5.329431] [00000350] libusb: debug [usbi_wait_for_events] poll() 3 fds with timeout in 60000ms
+[ 5.329445] [00000350] libusb: debug [usbi_wait_for_events] poll() returned 1
+[ 5.329459] [00000350] libusb: debug [reap_for_handle] urb type=1 status=-2 transferred=0
+[ 5.329470] [00000350] libusb: debug [handle_bulk_completion] handling completion status -2 of bulk urb 1/1
+[ 5.329479] [00000350] libusb: debug [handle_bulk_completion] abnormal reap: urb status -2
+[ 5.329489] [00000350] libusb: debug [handle_bulk_completion] abnormal reap: last URB handled, reporting
+[ 5.329499] [00000350] libusb: debug [usbi_handle_transfer_cancellation] detected timeout cancellation
+[ 5.329509] [00000350] libusb: debug [arm_timer_for_next_timeout] no timeouts, disarming timer
+[ 5.329520] [00000350] libusb: debug [usbi_handle_transfer_completion] transfer 0x55c453b5ebc0 has callback 0x7f2687ddd9d0
+[ 5.329530] [00000350] libusb: debug [sync_transfer_cb] actual_length=0
+[ 5.329543] [00000350] libusb: debug [libusb_free_transfer] transfer 0x55c453b5ebc0
+USB read failed: -7
+USB interrupt read: Resource temporarily unavailable
+Fatal error> USB read failed

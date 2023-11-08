@@ -62,13 +62,16 @@ typedef struct {
 
 void decode_answer_fm75();
 void decode_answer_sht1x();
+void decode_answer_gold();
 
-#define TEMPER_TYPES 3
+#define TEMPER_TYPES 5
 
 temper_type_t tempers[TEMPER_TYPES] = {
     { 0x0c45, 0x7401, "TEMPer2",   1, 2, 0, decode_answer_fm75  }, // TEMPer2* eg. TEMPer2V1.3
     { 0x0c45, 0x7401, "TEMPer1",   0, 1, 0, decode_answer_fm75  }, // other 0c45:7401 eg. TEMPerV1.4
     { 0x0c45, 0x7402, "TEMPerHUM", 0, 1, 1, decode_answer_sht1x },
+    { 0x413d, 0x2107, "TEMPerGold", 1, 1, 0, decode_answer_gold },
+    { 0x3553, 0xa001, "TEMPerGold", 1, 1, 0, decode_answer_gold },
 };
 
 /* memo: TEMPer2 cannot be distinguished with VID:PID,
@@ -309,6 +312,18 @@ void ex_program(int sig) {
 
 /* decode funcs */
 /* Thanks to https://github.com/edorfaus/TEMPered */
+
+void decode_answer_gold(unsigned char *answer, float *tempd, float *calibration) {
+    int buf;
+
+    // temp C internal
+    buf = ((signed char)answer[2] << 8) + (answer[3] & 0xFF);
+    tempd[0] = buf / 100.0;
+    ;tempd[0] = tempd[0] * calibration[0] + calibration[1];
+
+    // temp C external (none)
+    tempd[1] = 0;
+};
 
 void decode_answer_fm75(unsigned char *answer, float *tempd, float *calibration) {
     int buf;
